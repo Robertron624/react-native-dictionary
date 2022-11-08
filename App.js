@@ -1,16 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+import Homescreen from './screens/Homescreen';
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Homescreen />
       <StatusBar style="auto" />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  bold_text:{
+    fontWeight: "800",
+    fontSize: "16em"
+  },
   container: {
     flex: 1,
     backgroundColor: '#fff',
